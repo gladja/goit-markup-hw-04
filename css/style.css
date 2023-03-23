@@ -7,6 +7,7 @@
     --color-fon: #F4F4FD;
     --color-btn-hover: #404BBF;
     --color-border: #E7E9FC;
+    --gradient: rgba(46, 47, 66, 0.7);
 }
 
 * {
@@ -51,6 +52,7 @@ body {
 .section.second {
     padding-top: 96px;
 }
+
 .section {
     padding-bottom: 120px;
 }
@@ -201,6 +203,17 @@ body {
     padding: 188px 0;
 }
 
+.img-bg {
+    background-image: linear-gradient(var(--gradient), var(--gradient)),
+    url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    height: 600px;
+    margin: 0 auto;
+}
+
 .hero-title {
     width: 498px;
     margin: 0 auto 48px;
@@ -240,6 +253,20 @@ body {
 /*about list*/
 .about {
     display: flex;
+}
+
+.about-img-wrap {
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-color: var(--color-fon);
+    padding: 24px 100px;
+    margin-bottom: 8px;
+}
+
+.about-img {
+    width: 64px;
+    height: 64px;
 }
 
 .about-title {
@@ -307,6 +334,63 @@ body {
     background: var(--colot-fon-white);
     border-radius: 0 0 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-img.list {
+    display: flex;
+    gap: 24px;
+}
+
+.wrap p {
+    margin-bottom: 8px;
+}
+
+.team-img-wrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-logo);
+    display: block;
+    padding: 12px;
+}
+
+.team-img-wrap:hover {
+    background-color: var(--color-hover);
+}
+
+.team-img-item {
+    width: 16px;
+    height: 16px;
+}
+
+/*customers*/
+.custom {
+    display: flex;
+    gap: 24px;
+}
+
+.custom-img-wrap {
+    width: 168px;
+    height: 88px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    display: block;
+    padding: 16px 32px;
+}
+
+.custom-img-wrap:hover {
+    border: 1px solid var(--color-hover);
+
+}
+.custom-img-item {
+    height: 56px;
+    width: 106px;
+    fill: #8E8F99;
+    /*padding: 16px 32px;*/
+}
+
+.custom-img-item:hover {
+    fill: var(--color-hover);
 }
 
 /** footer*/
