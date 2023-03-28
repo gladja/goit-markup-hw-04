@@ -111,6 +111,7 @@ body {
 
 .border {
     border-bottom: 1px solid var(--color-border);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container.wrapper {
@@ -210,7 +211,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     max-width: 1440px;
-    height: 600px;
     margin: 0 auto;
 }
 
@@ -261,7 +261,9 @@ body {
     height: 112px;
     border-radius: 4px;
     background-color: var(--color-fon);
-    padding: 24px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 8px;
 }
 
@@ -351,8 +353,9 @@ body {
     height: 40px;
     border-radius: 50%;
     background: var(--color-logo);
-    display: block;
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .team-img-wrap:hover,
@@ -376,7 +379,10 @@ body {
     height: 88px;
     border-radius: 4px;
     border: 1px solid #8E8F99;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8E8F99;
 }
 
 .custom-img-wrap:hover,
@@ -385,10 +391,9 @@ body {
 
 }
 .custom-img-item {
-    padding: 16px 32px;
-    width: 168px;
-    height: 88px;
-    fill: #8E8F99;
+    width: 104px;
+    height: 56px;
+    fill: currentColor;
 }
 
 .custom-img-item:hover,
@@ -443,9 +448,9 @@ body {
     height: 40px;
     border-radius: 50%;
     background: #ffffff1A;
-    display: block;
-    padding: 8px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-img-wrap:hover,
